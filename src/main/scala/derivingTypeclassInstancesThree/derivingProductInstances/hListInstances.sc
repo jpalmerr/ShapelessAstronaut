@@ -22,7 +22,7 @@ We can combine these building blocks to create an encoder for our HList.
 We’ll use two rules: one for HNil and one for ::
  */
 
-import derivingTypeclassInstances.derivingProductInstances.models.IceCream
+import derivingTypeclassInstancesThree.derivingProductInstances.models.IceCream
 import shapeless.{::, Generic, HList, HNil}
 
 implicit val hnilEncoder: CsvEncoder[HNil] =

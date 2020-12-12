@@ -2,7 +2,7 @@
 
 import shapeless.Generic
 
-import derivingTypeclassInstances.derivingProductInstances.models._
+import derivingTypeclassInstancesThree.derivingProductInstances.models._
 
 implicit val iceCreamEncoder: CsvEncoder[IceCream] = { val gen = Generic[IceCream]
   val enc = CsvEncoder[gen.Repr]

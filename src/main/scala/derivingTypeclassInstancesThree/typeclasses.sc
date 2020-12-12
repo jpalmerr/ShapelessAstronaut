@@ -1,4 +1,4 @@
-import derivingTypeclassInstances.derivingProductInstances.models._
+import derivingTypeclassInstancesThree.derivingProductInstances.models._
 
 // Custom data type:
 case class Employee(name: String, number: Int, manager: Boolean)
@@ -24,7 +24,7 @@ val employees: List[Employee] = List(
 writeCsv(employees)
 
 // another
-import derivingTypeclassInstances.derivingProductInstances.models._
+import derivingTypeclassInstancesThree.derivingProductInstances.models._
 
 implicit val iceCreamEncoder: CsvEncoder[IceCream] = new CsvEncoder[IceCream] {
   def encode(i: IceCream): List[String] =
